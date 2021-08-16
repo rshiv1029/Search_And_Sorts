@@ -1,6 +1,6 @@
 # from constants import LINEAR_SEARCH
-from helpers import user_input_formatter
-from constants import INPUTS
+from utils.helpers import user_input_formatter
+from utils.constants import INPUTS
 from binary_search import binary_search
 from linear_search import linear_search
 from jump_search import jump_search
