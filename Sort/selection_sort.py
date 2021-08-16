@@ -15,9 +15,13 @@ def selection_sort(arr: list) -> list:
     sub = 0
     small = sub
     while sub < length - 1:
+        # Find the smallest value in the unsorted subarray
         for i in range(sub, length):
             small = i if arr[i] < arr[small] else small
+        # Swap the smallest with the beginning of the unsorted array
         arr = swap(arr, sub, small)
+        # Now the sorted subarray includes the beginning of the unsorted
+        # subarray. The unsorted subarray now shrinks
         sub += 1
         small = sub
     print("Sorted array is " + str(arr))

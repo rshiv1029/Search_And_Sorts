@@ -1,5 +1,6 @@
 from bubble_sort import bubble_sort
 from heap_sort import heap_sort
+from insertion_sort import insertion_sort
 from selection_sort import selection_sort
 from utils.constants import INPUTS
 from utils.helpers import user_input_formatter
@@ -28,8 +29,8 @@ def main():
         return bubble_sort(arr)
     # if sort == "H":
     #     return heap_sort(arr)
-    # if sort == "I":
-    #     return insertion_sort(arr)
+    if sort == "I":
+        return insertion_sort(arr)
     # if sort == "M":
     #     return merge_sort(arr)
     if sort == "S":
