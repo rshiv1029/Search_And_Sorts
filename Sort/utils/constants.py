@@ -3,4 +3,5 @@ INPUTS = {
     "H": "Heap Sort",
     "I": "Insertion Sort",
     "M": "Merge Sort",
+    "S": "Selection Sort",
 }
