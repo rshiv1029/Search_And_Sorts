@@ -1,7 +1,4 @@
-# from constants import LINEAR_SEARCH
-from binary_search import binary_search
-from jump_search import jump_search
-from linear_search import linear_search
+from bubble_sort import bubble_sort
 from utils.constants import INPUTS
 from utils.helpers import user_input_formatter
 
@@ -9,13 +6,13 @@ from utils.helpers import user_input_formatter
 def main():
     # Take user input for preferred searching algorithm; check if valid
     while True:
-        search = input(
+        sort = input(
             "Enter preferred search algorithm (type 'help' for list of searches): "
         )
-        if search.lower() == "help":
+        if sort.lower() == "help":
             for alg, desc in INPUTS.items():
                 print("Type '" + alg + "' for a " + desc)
-        elif search.upper() in INPUTS.keys():
+        elif sort.upper() in INPUTS.keys():
             break
         else:
             print("Input correct searching abbreviation")
@@ -23,17 +20,16 @@ def main():
     # Take user input for array and format input from string to array[int]
     arr = input("Enter your array (Format Example: [1,2,3,4,5]): ")
     arr = user_input_formatter(arr)
-
-    # Take user input for target
-    target = input("Enter your target: ")
-
+    sort = sort.upper()
     # Call searching algorithm
-    if search == "L":
-        return linear_search(arr, int(target))
-    if search == "B":
-        return binary_search(arr, int(target))
-    if search == "J":
-        return jump_search(arr, int(target))
+    if sort == "B":
+        return bubble_sort(arr)
+    # if sort == "H":
+    #     return heap_sort(arr)
+    # if sort == "I":
+    #     return insertion_sort(arr)
+    # if sort == "M":
+    #     return merge_sort(arr)
 
 
 if __name__ == "__main__":

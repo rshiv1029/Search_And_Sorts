@@ -12,6 +12,6 @@
 
 | Sorts Implemented         | Description |
 | ------------------------- | ----------- |
-|                           |             |
+| Bubble Sort               | O{n^2}      |
 |                           |             |
 |                           |             |
