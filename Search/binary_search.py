@@ -8,6 +8,8 @@
 # This algorithm runs in O(log[n]) as for each iteration we are removing half
 # the list.
 
+from helpers import user_input_formatter
+
 
 def binary_search(array: list, target: int) -> bool:
     # Set our boundaries:
@@ -28,21 +30,3 @@ def binary_search(array: list, target: int) -> bool:
             middle = int((left + right) / 2)
     print("Your target value could not be located")
     return False
-
-
-def main():
-    # Take user input for array and format input from string to array[int]
-    arr = input("Enter your array (Format Example: [1,2,3,4,5]): ")
-    arr = arr.split(",")
-    arr[0] = arr[0][-1]
-    arr[-1] = arr[-1][:-1]
-    for i in range(0, len(arr)):
-        arr[i] = int(arr[i])
-
-    # Take user input for target
-    target = input("Enter your target: ")
-    print(binary_search(arr, int(target)))
-
-
-if __name__ == "__main__":
-    main()
