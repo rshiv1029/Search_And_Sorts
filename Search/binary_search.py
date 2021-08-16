@@ -6,10 +6,7 @@
 # ends with the remaining half being empty, the target is not in the array.
 
 # This algorithm runs in O(log[n]) as for each iteration we are removing half
-# the list.  
-
-from helpers import user_input_formatter
-
+# the list.
 
 def binary_search(array: list, target: int) -> bool:
     # Set our boundaries:
