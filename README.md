@@ -8,7 +8,7 @@
 | Binary Search             | O{log(n)}      |
 | Jump Search               | O{(n/m)+(m-1)} |
 
-## Sorts 
+## Sorts
 
 | Sorts Implemented         | Description |
 | ------------------------- | ----------- |

@@ -13,7 +13,7 @@
 import math
 
 
-def linear_search(array: list, target: int) -> bool:
+def jump_search(array: list, target: int) -> bool:
     length = len(array)
     index = 0
     block = int(math.sqrt(length))

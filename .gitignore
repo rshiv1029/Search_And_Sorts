@@ -1,0 +1,5 @@
+# Byte-compiled / optimized / DLL files
+__pycache__
+.pre-commit-config.yaml
+Search/__pycache__
+Search/utils/__pycache__

@@ -1,5 +1,5 @@
-from binary_search import binary_search
-from linear_search import linear_search
-from jump_search import jump_search
+# from Search.binary_search import binary_search
+# from Search.linear_search import linear_search
+# from Search.jump_search import jump_search
 
-INPUTS = ["L", "B", "J"]
+INPUTS = {"L": "Linear Search", "B": "Binary Search", "J": "Jump Search"}
