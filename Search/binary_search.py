@@ -8,9 +8,6 @@
 # This algorithm runs in O(log[n]) as for each iteration we are removing half
 # the list.
 
-from helpers import user_input_formatter
-
-
 def binary_search(array: list, target: int) -> bool:
     # Set our boundaries:
     left = 0

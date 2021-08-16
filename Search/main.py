@@ -3,6 +3,7 @@ from helpers import user_input_formatter
 from constants import INPUTS
 from binary_search import binary_search
 from linear_search import linear_search
+from jump_search import jump_search
 
 
 def main():
@@ -25,7 +26,9 @@ def main():
     if search == "L":
         return linear_search(arr, int(target))
     if search == "B":
-        return linear_search(arr, int(target))
+        return binary_search(arr, int(target))
+    if search == "J":
+        return jump_search(arr, int(target))
 
 
 if __name__ == "__main__":

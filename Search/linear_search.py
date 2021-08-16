@@ -7,9 +7,6 @@
 # This algorithm runs in O(n) as we are going through each element. Thus this
 # algorithm's time complexity will increase linearly as the size increases.
 
-from helpers import user_input_formatter
-
-
 def linear_search(array: list, target: int) -> bool:
     for iter in range(0, len(array)):
         if array[iter] == target:
