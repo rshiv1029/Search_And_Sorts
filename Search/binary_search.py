@@ -6,7 +6,7 @@
 # ends with the remaining half being empty, the target is not in the array.
 
 # This algorithm runs in O(log[n]) as for each iteration we are removing half
-# the list. 
+# the list.  
 
 from helpers import user_input_formatter
 
