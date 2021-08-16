@@ -8,6 +8,7 @@
 # This algorithm runs in O(log[n]) as for each iteration we are removing half
 # the list.
 
+
 def binary_search(array: list, target: int) -> bool:
     # Set our boundaries:
     left = 0
