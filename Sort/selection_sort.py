@@ -7,7 +7,7 @@
 # find the minimum every element and add to the beginning of the subarray even
 # if it is sorted.
 
-from utils.helpers import swap
+from Sort.utils.helpers import swap
 
 
 def selection_sort(arr: list) -> list:

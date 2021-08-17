@@ -1,12 +1,12 @@
 # from constants import LINEAR_SEARCH
-from binary_search import binary_search
-from jump_search import jump_search
-from linear_search import linear_search
-from utils.constants import INPUTS
-from utils.helpers import user_input_formatter
+from Search.binary_search import binary_search
+from Search.jump_search import jump_search
+from Search.linear_search import linear_search
+from Search.utils.constants import INPUTS
+from Search.utils.helpers import user_input_formatter
 
 
-def main():
+def search_main():
     # Take user input for preferred searching algorithm; check if valid
     while True:
         search = input(
@@ -37,4 +37,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    search_main()

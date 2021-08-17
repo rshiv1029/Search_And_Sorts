@@ -8,7 +8,7 @@
 # The time complexity for this is O(n^2) due to the nested loops. The worst
 # case occurs when the list is in reverse order.
 
-from utils.helpers import swap
+from Sort.utils.helpers import swap
 
 
 def insertion_sort(arr: list) -> list:

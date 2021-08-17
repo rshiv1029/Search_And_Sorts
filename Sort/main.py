@@ -1,16 +1,16 @@
-from bubble_sort import bubble_sort
-from heap_sort import heap_sort
-from insertion_sort import insertion_sort
-from selection_sort import selection_sort
-from utils.constants import INPUTS
-from utils.helpers import user_input_formatter
+from Sort.bubble_sort import bubble_sort
+from Sort.heap_sort import heap_sort
+from Sort.insertion_sort import insertion_sort
+from Sort.selection_sort import selection_sort
+from Sort.utils.constants import INPUTS
+from Sort.utils.helpers import user_input_formatter
 
 
-def main():
+def sort_main():
     # Take user input for preferred searching algorithm; check if valid
     while True:
         sort = input(
-            "Enter preferred search algorithm (type 'help' for list of searches): "
+            "Enter preferred sort algorithm (type 'help' for list of searches): "
         )
         if sort.lower() == "help":
             for alg, desc in INPUTS.items():
@@ -18,7 +18,7 @@ def main():
         elif sort.upper() in INPUTS.keys():
             break
         else:
-            print("Input correct searching abbreviation")
+            print("Input correct sorting abbreviation")
 
     # Take user input for array and format input from string to array[int]
     arr = input("Enter your array (Format Example: [1,2,3,4,5]): ")
@@ -35,6 +35,9 @@ def main():
     #     return merge_sort(arr)
     if sort == "S":
         return selection_sort(arr)
+
+    # TODO
+    # Implement Merge, Heap, Quick, and Counting Sort
 
 
 if __name__ == "__main__":
